@@ -1,0 +1,11 @@
+.customerDBWrapper{
+    position: relative;
+    width: 100vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.customerDBWrapper > .customer{
+    grid-template-columns: repeat(5, 1fr);
+}

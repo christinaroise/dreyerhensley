@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter, NavLink, Route} from "react-router-dom";
+import "./firebase"
 import './App.css';
+import Studio from './Studio'
+import Booking from './Booking'
+import Admin from './Admin'
+import CustomerDB from './components/CustomerDB'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <HashRouter basename="/">
+      <header>
+        <nav>
+          <NavLink exact to="/" activeClassName="nav-link--active">Dreyer + Hensley</NavLink>
+        </nav>
+      <Route exact path="/" component={Studio} /> 
+      <Route exact path="/booking" component={Booking} /> 
+      <Route exact path="/admin" component={Admin} />
+      <Route exact path="/admin/kunder" component={CustomerDB}/> 
       </header>
-    </div>
+    </HashRouter>
   );
 }
 

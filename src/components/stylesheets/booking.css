@@ -1,0 +1,90 @@
+.bookingWrapper{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: url(../images/dreyhen005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.adminLink{
+    position: absolute;
+    right: 1.5rem;
+    top: 5.5rem;
+    cursor: pointer;
+}
+
+
+.adminLink button{
+    font-size: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+}
+
+.booking{  
+    display: flex;
+    height: 92.25%;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute; 
+    top: 4rem;
+    border: 1rem solid transparent;
+}
+
+.booking > div{
+    flex: 1;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form{
+    border-left: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileBooking{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .booking{
+        display: none;
+    }
+
+    .mobileBooking{
+        display: grid;
+        height: 91%;
+        text-align: center;
+        box-sizing: border-box;
+        position: absolute; 
+        top: 3.5rem;
+        border: 1rem solid transparent;
+        overflow: scroll;
+    }
+
+    .mobileBooking > div{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 0;
+    }
+
+    .mobForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

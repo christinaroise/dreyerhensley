@@ -1,0 +1,47 @@
+section{
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    
+}
+
+.wrapper{
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height:100%;
+    position:relative;
+
+}
+
+.slides article {
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    width:25%;
+    height:100%;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+
+.slides article img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .slides article img {
+        width: 100%;
+    }
+}

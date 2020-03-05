@@ -1,0 +1,67 @@
+.DayPicker-Day{
+    outline: none;
+}
+
+.DayPicker-Day:hover{
+    outline: none;
+    color: grey;
+    background-color: rgba(164, 151, 132, 0.15) !important;
+    border-radius: 0;
+}
+
+.DayPicker-NavBar span{
+    outline: none;
+}
+
+.DayPicker-Day--today{
+    color: #AD8A48;
+    font-weight: 700;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside){
+    background-color: rgba(164, 151, 132, 1)  !important;
+    border-radius: 0% !important;
+    color: white;
+}
+
+@media screen and (min-width: 850px) {
+    .booking .DayPicker{
+        width: 50vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .booking .DayPicker-wrapper{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+        outline: none;
+    }
+
+    .booking .DayPicker-Month{
+        height: 90%;
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        align-items: center; 
+        box-sizing: border-box;
+    }
+
+    .booking .DayPicker-Months{
+        height: 90%;
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        align-items: center; 
+        box-sizing: border-box;
+    }
+}

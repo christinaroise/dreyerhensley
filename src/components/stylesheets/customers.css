@@ -1,0 +1,43 @@
+.customerWrapper{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.customer{
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 1rem solid transparent;
+    border-radius: 1%;
+    width: 14rem;
+    height: 16rem;
+    -webkit-box-shadow: 1px 1px 6px 3px rgba(204, 204, 204, 0.824);    
+    -moz-box-shadow:    1px 1px 6px 3px rgba(204, 204, 204, 0.824);  
+    box-shadow:         1px 1px 6px 3px rgba(204, 204, 204, 0.824);
+}
+
+.customer:hover{
+    transform: scale(1.02);
+}
+
+.customer > p{
+    line-height: 1;
+}
+
+.profile{
+    margin: auto;
+    background-color: #AD8A48;
+    font-size: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: white;
+}

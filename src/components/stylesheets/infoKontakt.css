@@ -1,0 +1,17 @@
+.infoKontakt h1{
+    height: 3rem;
+}
+
+.infoKontakt h1{
+    padding: 0;
+}
+
+.infoKontakt h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.infoKontakt > div{
+
+}
